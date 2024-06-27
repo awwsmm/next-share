@@ -3,8 +3,9 @@ import createShareButton from '../../hocs/createShareButton';
 
 function redditLink(url: string, { title }: { title?: string }) {
   return (
-    'https://www.reddit.com/submit' +
+    'https://new.reddit.com/submit' +
     transformObjectToParams({
+      type: 'LINK',
       url,
       title,
     })
